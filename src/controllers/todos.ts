@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express"
 import { Todo } from '../models/todo'
 
-export class TodoController {
+class TodoController {
     todos: Todo[] = []
 
     constructor(){
@@ -74,3 +74,5 @@ export class TodoController {
         }
     }
 }
+
+export { TodoController }
